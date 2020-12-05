@@ -13,3 +13,4 @@ console.log(soma(4, 55))
 
 //retorno implicito 
 const subtracao = (a, b) => a - b
+console.log(subtracao(2, 3))
