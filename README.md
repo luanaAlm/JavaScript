@@ -1,8 +1,4 @@
 # JavaScript
-Linguagem JavaScript curso da Code3d Udemy
+Curso Web Moderno Completo com JavaScript 2020 + Projetos, e exercícios de fixação
 
-Está pasta contem exercícios sobre o JavaScript e as particularidades desta linguagem 
-
-Sites com Exercicios a fazer
-https://tableless.com.br/exercicios-simples-de-javascript-para-entrevista/
-https://github.com/gabrieldarezzo/helpjs-ravi
+Curso: Leonardo Leitão - Cod3r Cursos Online (Udemy)
