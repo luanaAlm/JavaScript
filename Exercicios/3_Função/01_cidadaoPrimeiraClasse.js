@@ -20,3 +20,15 @@ function run(fun){
     fun()
 }
 run(function(){console.log('Execultando...');})
+
+//função pode retornar/conter função 
+function soma(a, b){
+    return function(c){
+        console.log(a + b + c)
+    }
+}
+//chamada direta
+soma(2, 3)(4)
+//armazenr na variavel
+const cincoMais = soma(2, 3)
+cincoMais(4)
