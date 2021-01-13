@@ -22,7 +22,7 @@ function sisNotas(nota){
     }else if((som1) % 5 == 0){
         console.log(`A nota foi arredondada para : ${som1}`);
     }else{
-        console.log(`A nota é : ${nota}`);
+        return `A nota é : ${nota}`
     }
 }
 
