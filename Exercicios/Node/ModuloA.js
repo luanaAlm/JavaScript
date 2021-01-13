@@ -1,7 +1,7 @@
 //Como exportar de um módulo Node para outro arquivo (forma menos comum)
 
 //forma 1
-this.ola = 'Fala Pessoas'
+this.ola = 'Fala Pessoal'
 
 //forma 2
 exports.bemVindo = 'Bem vindo ao Node.js'
