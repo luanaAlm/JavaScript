@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>fatorial JS</title>
+   <script type="text/javascript" src="script.js"></script>
+ </head>
+ <body>
+   Fatorial de: <input id="numero" type="number"> <br />
+   <button onclick="fatorial()">Exibir</button><br />
+   Resposta: <div id='resposta'></div>
+   <script>
+        function fatorial(){
+            var numero = parseInt(document.getElementById('numero').value);
+            var resposta = document.getElementById('resposta');
+            var resultado=1;
+
+            for(var i=1 ; i<=numero ; i++)
+            resultado *= i;
+            resposta.innerHTML =resultado;
+        }
+   </script>
+ </body>
+</html>
