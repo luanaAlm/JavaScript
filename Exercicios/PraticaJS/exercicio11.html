@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ano Bissexto</title>
+</head>
+<body>
+    Digite um ano:
+    <input id="ano" type="number"> 
+    <br/>
+    <button onclick="bissexto()">Validar</button>
+    <br/>
+    Resposta: 
+    <div id='resposta' style='display:inline'></div>
+    <script type="text/javascript">
+        function bissexto(){
+            var ano = parseInt(document.getElementById("ano").value);
+            resposta = document.getElementById('resposta');
+   
+            if ((ano % 400 == 0) || (ano % 4 == 0 && ano % 100 != 0))
+                resposta.innerHTML="É bissexto";
+            else
+                resposta.innerHTML="Não é bissexto";
+            }
+    </script>
+</body>
+</html>
