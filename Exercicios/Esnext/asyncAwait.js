@@ -1,3 +1,4 @@
+const { lchmod } = require('fs')
 const http = require('http')
 
 const getTurma = letra =>{ //pegar a letra
@@ -21,5 +22,12 @@ const getTurma = letra =>{ //pegar a letra
 
 //recrso do ES8
 let obterAlunos = async () =>{
-    
+    const ta = await getTurma('A')
+    const tb = await getTurma('B')
+    const tc = await getTurma('C')
+    return [].concat(ta, tb, tc)
 }
+//retornar um objeto AsyncFunction
+obterAlunos()
+    .then(alunos => alunos.map(a => a.nome))
+    .then(nomes => console.log(nomes))
